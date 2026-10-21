@@ -12,18 +12,65 @@ Finds text that was never translated on your TranslatePress site — for any lan
 
 == Description ==
 
-Adds a **Watchdog** tab to the TranslatePress settings. It compares every public page with each of its translations, as a logged-out visitor sees them, and lists text that is still identical. TranslatePress' string tables then classify each finding: not translated, translated but not shown, or not in TranslatePress at all. Deliberately identical translations are hidden.
+If you translate your site by hand to keep its quality and tone consistent, it is easy to miss a string — a button label, an image alt text, a line somewhere. And every time you change the design, new strings appear that you might forget to translate. TranslatePress shows you one page at a time, so there is no quick way to see what is still missing across the whole site.
 
-* Scans only when you open the tab or click Refresh.
+Translation Watchdog adds a **Watchdog** tab to the TranslatePress settings. It compares every public page with each of its translations, as a logged-out visitor sees them, and lists every piece of text that is still identical. TranslatePress' own string tables then tell you why:
+
+* **Not translated** — TranslatePress knows the text but has no translation.
+* **Translated, not shown** — a translation exists, but the page still shows the original, usually because of a spelling difference such as curly quotes, dashes or HTML entities.
+* **Not in TranslatePress** — the text comes from somewhere TranslatePress does not see, such as JavaScript or another plugin.
+
+Text you deliberately translated to the same words (brand names, "FAQ") is recognised and hidden automatically.
+
+= Features =
+
+* Works with any language combination.
+* Checks visible text, image alt texts, titles, placeholders, aria-labels, the page title and the meta description.
+* Scans only when you open the tab or click Refresh — nothing runs in the background, nothing on the front end changes.
 * Results appear while the scan runs.
-* Links to each translated page and straight into the TranslatePress editor.
-* Sitewide strings grouped once; Skip, Undo, allowlist and Retry.
+* Every finding links to the translated page and straight into the TranslatePress editor.
+* Re-check a single page after fixing it, without a full scan.
+* Header, footer and popup strings are grouped once under "Sitewide".
+* Skip false positives, keep an allowlist of brand names, ignore whole components by CSS selector, or leave pages out of the scan — all reversible.
+* Several translation languages in one scan.
 
 == Installation ==
 
 1. Install and activate TranslatePress.
-2. Upload the plugin zip under Plugins → Add New → Upload Plugin and activate it.
-3. Open Settings → TranslatePress → Watchdog.
+2. Install and activate Translation Watchdog.
+3. Open Settings → TranslatePress → Watchdog. The first scan starts automatically.
+
+== Frequently Asked Questions ==
+
+= Does it work with my languages? =
+
+Yes. It does not need to understand any language: it compares each translated page with its original and reports text that is still the same.
+
+= Does it slow down my site? =
+
+No. It does nothing on the front end. A scan only runs while you have the Watchdog tab open, and it fetches your pages the way a visitor would.
+
+= Why are brand names or words like "Download" listed? =
+
+Some words are the same in both languages, so they look untranslated. Click Skip to hide them, or add brand names to the allowlist under Settings.
+
+= A whole component keeps showing up (cookie banner, popup, menu). Can I leave it out? =
+
+Yes. Each finding shows the element it is in. Add that element to "Ignore elements" under Settings, and its text is no longer checked. To leave a whole page out of the scan, use "Ignore page".
+
+= How long does a scan take? =
+
+It depends on the number of pages and your host. Pages are fetched several at a time; results appear while the scan runs.
+
+= Does it change my translations? =
+
+No. It only reads. You fix translations in the TranslatePress editor, as usual.
+
+== Screenshots ==
+
+1. A scan in progress: each page with its untranslated text, the reason, and a link into the TranslatePress editor.
+2. Settings: an allowlist for brand names, and page components to leave out of the scan.
+3. Skipped strings, each with Undo.
 
 == Changelog ==
 

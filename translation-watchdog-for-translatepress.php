@@ -31,6 +31,7 @@ const TRWATCH_TIMEOUT    = 20;
 require_once __DIR__ . '/includes/trp.php';
 require_once __DIR__ . '/includes/scanner.php';
 require_once __DIR__ . '/includes/admin.php';
+// @wporg-remove-start — GitHub edition only (wordpress.org delivers updates and translations itself)
 require_once __DIR__ . '/includes/updater.php';
 
 add_action('plugins_loaded', function () {
@@ -38,7 +39,9 @@ add_action('plugins_loaded', function () {
     // phpcs:ignore PluginCheck.CodeAnalysis.DiscouragedFunctions.load_plugin_textdomainFound
     load_plugin_textdomain('translation-watchdog-for-translatepress', false, dirname(plugin_basename(__FILE__)) . '/languages');
 });
+// @wporg-remove-end
 
+// @wporg-remove-start — migrations from pre-release versions, not needed for new installs
 register_activation_hook(__FILE__, function () {
     // take over data from the earlier single-file (mu-plugin) version
     $map = ['cstw_last_scan' => TRWATCH_OPT_RESULT, 'cstw_allowlist' => TRWATCH_OPT_ALLOW, 'cstw_skipped' => TRWATCH_OPT_SKIP];
@@ -53,3 +56,4 @@ register_activation_hook(__FILE__, function () {
         delete_option('trwatch_language');
     }
 });
+// @wporg-remove-end

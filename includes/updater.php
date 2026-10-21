@@ -25,7 +25,8 @@ add_filter('update_plugins_github.com', function ($update, $plugin_data, $plugin
         if (!is_wp_error($res) && wp_remote_retrieve_response_code($res) === 200) {
             $json = json_decode(wp_remote_retrieve_body($res), true);
             foreach ((array) ($json['assets'] ?? []) as $asset) {
-                if (str_ends_with((string) ($asset['name'] ?? ''), '.zip')) {
+                // exact name: a release may carry other zips (the wordpress.org edition must never be installed from here)
+                if (($asset['name'] ?? '') === TRWATCH_SLUG . '.zip') {
                     $release = [
                         'version' => ltrim((string) $json['tag_name'], 'v'),
                         'url'     => (string) $json['html_url'],
