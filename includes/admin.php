@@ -39,14 +39,6 @@ add_filter('plugin_action_links_' . plugin_basename(TRWATCH_FILE), function ($li
     return $links;
 });
 
-// @wporg-remove-start — the earlier single-file version would add a second tab
-add_action('admin_notices', function () {
-    if (!function_exists('cstw_render') || !current_user_can('manage_options')) return;
-    echo '<div class="notice notice-warning"><p>'
-       . esc_html__('Translation Watchdog: the old must-use version (wp-content/mu-plugins/cs-translation-watchdog.php) is still installed. Delete that file — this plugin replaces it.', 'translation-watchdog-for-translatepress')
-       . '</p></div>';
-});
-// @wporg-remove-end
 
 add_action('admin_enqueue_scripts', function ($hook) {
     if ($hook === '' || $hook !== trwatch_hook_suffix()) return;

@@ -2,10 +2,9 @@
 // Runs when the plugin is deleted from the Plugins screen: remove everything it stored.
 if (!defined('WP_UNINSTALL_PLUGIN')) exit;
 
-foreach (['trwatch_last_scan', 'trwatch_allowlist', 'trwatch_skipped', 'trwatch_languages', 'trwatch_language', 'trwatch_ignore_selectors', 'trwatch_ignored_pages'] as $trwatch_option) {
+foreach (['trwatch_last_scan', 'trwatch_allowlist', 'trwatch_skipped', 'trwatch_languages', 'trwatch_ignore_selectors', 'trwatch_ignored_pages'] as $trwatch_option) {
     delete_option($trwatch_option);
 }
-delete_transient('trwatch_release');
 
 // scans in progress (expire after an hour anyway)
 global $wpdb;

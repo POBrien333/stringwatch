@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.9
+
+- "Ignore page" moved to the right, next to "Open in translator".
+- Prepared for the WordPress.org plugin directory: the GitHub updater and the `Update URI` header are removed, so updates will come from WordPress.org once the plugin is listed. Translations are loaded by WordPress.org as well. Migrations from pre-release versions are removed.
+- readme.txt: full description, FAQ, screenshot captions; plugin-directory banner, icons and screenshots in `.wordpress-org/`.
+
 ## 0.3.8
 
 - **Ignore page** on each page card: leaves the page out of future scans, for every language. Listed under **Ignored pages** with Undo — the page is checked again from the next scan (e.g. a seasonal popup once it goes live).

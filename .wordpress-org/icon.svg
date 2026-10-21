@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 256 256" width="256" height="256" role="img">
+  <title>Translation Watchdog for TranslatePress</title>
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2=".4" y2="1">
+      <stop offset="0" stop-color="#0E5866"/>
+      <stop offset="1" stop-color="#05242C"/>
+    </linearGradient>
+    <radialGradient id="bloom" cx=".5" cy=".05" r=".85">
+      <stop offset="0" stop-color="#5BEBC4" stop-opacity=".26"/>
+      <stop offset=".65" stop-color="#5BEBC4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".3"/>
+      <stop offset=".3" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity=".4"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#CFEAE4"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#93F7DD"/>
+      <stop offset="1" stop-color="#1FBF97"/>
+    </linearGradient>
+    <linearGradient id="laser" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFB547" stop-opacity="0"/>
+      <stop offset=".2" stop-color="#FFC566"/>
+      <stop offset=".8" stop-color="#FFC566"/>
+      <stop offset="1" stop-color="#FFB547" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFB547" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFB547" stop-opacity=".18"/>
+    </linearGradient>
+    <clipPath id="left"><rect x="0" y="0" width="126.5" height="256"/></clipPath>
+    <clipPath id="right"><rect x="129.5" y="0" width="126.5" height="256"/></clipPath>
+    <clipPath id="tileClip"><rect width="256" height="256" rx="58"/></clipPath>
+    <filter id="lift" x="-20%" y="-20%" width="140%" height="150%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dy="7" result="o"/>
+      <feFlood flood-color="#021216" flood-opacity=".55"/>
+      <feComposite in2="o" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow" x="-50%" y="-500%" width="200%" height="1100%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="256" height="256" rx="58" fill="url(#tile)"/>
+  <rect width="256" height="256" rx="58" fill="url(#bloom)"/>
+  <g clip-path="url(#tileClip)">
+    <g filter="url(#lift)">
+      <g clip-path="url(#left)"><path fill-rule="evenodd" d="M58 206 L110 50 H146 L198 206 H164 L152 170 H104 L92 206 Z M113 142 H143 L128 94 Z" fill="url(#paper)"/></g>
+      <g transform="translate(0 6)"><g clip-path="url(#right)"><path fill-rule="evenodd" d="M58 206 L110 50 H146 L198 206 H164 L152 170 H104 L92 206 Z M113 142 H143 L128 94 Z" fill="url(#mint)"/></g></g>
+    </g>
+    <g transform="translate(0 186)">
+      <rect x="22" y="-28" width="212" height="28" fill="url(#wake)"/>
+      <rect x="22" y="-1.5" width="212" height="3" rx="1.5" fill="url(#laser)" filter="url(#glow)"/>
+    </g>
+    <circle cx="128" cy="160" r="8" fill="#FFB547" stroke="#05242C" stroke-width="3"/>
+  </g>
+  <g filter="url(#lift)">
+    <path d="M178 22h50a14 14 0 0 1 14 14v42a14 14 0 0 1-14 14h-30l-16 14v-14h-4a14 14 0 0 1-14-14V36a14 14 0 0 1 14-14z" fill="url(#mint)"/>
+  </g>
+  <path d="M178 24h50a12 12 0 0 1 12 12v10H166V36a12 12 0 0 1 12-12z" fill="#ffffff" opacity=".22"/>
+  <g transform="translate(169 29) scale(.6)" fill="none" stroke="#05242C" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 14l8 9"/>
+    <path d="M8 40h12v38l9-8"/>
+    <path d="M44 16h36L50 50"/>
+    <path d="M56 26l32 26"/>
+    <path d="M46 62h40M50 75h32M42 89h50M66 58v40"/>
+  </g>
+  <rect x="1.25" y="1.25" width="253.5" height="253.5" rx="56.75" fill="none" stroke="url(#edge)" stroke-width="2.5"/>
+</svg>

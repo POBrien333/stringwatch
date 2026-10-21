@@ -42,19 +42,3 @@ jobs:
       - uses: wordpress/plugin-check-action@v1
         with:
           build-dir: build/translation-watchdog-for-translatepress
-          # the GitHub updater is intentional for this distribution channel
-          exclude-checks: plugin_updater
-
-  plugin-check-wporg:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-      - name: Build the wordpress.org edition
-        run: |
-          mkdir -p build
-          git archive HEAD --prefix=translation-watchdog-for-translatepress/ | tar -x -C build
-          bash bin/build-wporg.sh build/translation-watchdog-for-translatepress
-      # no exclusions: this is what the wordpress.org review sees
-      - uses: wordpress/plugin-check-action@v1
-        with:
-          build-dir: build/translation-watchdog-for-translatepress

@@ -15,4 +15,5 @@
 /assets/icon-static.svg export-ignore
 /assets/icon-*.png  export-ignore
 /docs               export-ignore
-/bin                export-ignore
+/.wordpress-org     export-ignore
+/assets/icon.svg    export-ignore

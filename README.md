@@ -64,7 +64,7 @@ WordPress 6.5+, PHP 8.0+, TranslatePress (free or paid).
 
 Download the zip from the [latest release](../../releases/latest), then *Plugins → Add New → Upload Plugin*. Open *Settings → TranslatePress → Watchdog*.
 
-Updates appear in the WordPress admin like any other plugin (from GitHub releases).
+The plugin is being submitted to the WordPress.org plugin directory. Once it is listed, install and update it from there (*Plugins → Add New*). This repository holds the source code and the release zips.
 
 ## Filters
 

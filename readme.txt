@@ -4,7 +4,7 @@ Tags: translatepress, translation, multilingual, quality, untranslated
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 0.3.8
+Stable tag: 0.3.9
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,11 +68,15 @@ No. It only reads. You fix translations in the TranslatePress editor, as usual.
 
 == Screenshots ==
 
-1. A scan in progress: each page with its untranslated text, the reason, and a link into the TranslatePress editor.
-2. Settings: an allowlist for brand names, and page components to leave out of the scan.
-3. Skipped strings, each with Undo.
+1. A scan in progress: (1) Refresh, (2) results appear while it runs, (3) re-check one page, (4) open the page in the TranslatePress editor, (5) why the text is untranslated, (6) skip a false positive.
+2. Settings: (7) an allowlist for brand and product names, (8) page components to leave out of the scan, by CSS selector.
+3. Skipped strings: (9) Undo brings one back.
 
 == Changelog ==
+
+= 0.3.9 =
+* "Ignore page" moved to the right, next to "Open in translator".
+* Prepared for the WordPress.org plugin directory.
 
 = 0.3.8 =
 * "Ignore page" on each page card, with Undo under "Ignored pages".

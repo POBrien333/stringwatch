@@ -39,17 +39,3 @@ jobs:
         with:
           files: translation-watchdog-for-translatepress.zip
           generate_release_notes: true
-
-      # wordpress.org edition: workflow artifact only, never a release asset
-      # (installed GitHub copies must not update to a build without the updater)
-      - name: Build wordpress.org edition
-        run: |
-          mkdir -p build-wporg
-          cp -r build/translation-watchdog-for-translatepress build-wporg/
-          bash bin/build-wporg.sh build-wporg/translation-watchdog-for-translatepress
-          cd build-wporg && zip -rq ../translation-watchdog-for-translatepress-wporg.zip translation-watchdog-for-translatepress
-
-      - uses: actions/upload-artifact@v4
-        with:
-          name: translation-watchdog-for-translatepress-wporg-${{ github.ref_name }}
-          path: translation-watchdog-for-translatepress-wporg.zip
