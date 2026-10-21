@@ -1,5 +1,5 @@
 === Translation Watchdog for TranslatePress ===
-Contributors: patrickobrien
+Contributors: bluerivergrowth
 Tags: translatepress, translation, multilingual, quality, untranslated
 Requires at least: 6.5
 Tested up to: 7.1
