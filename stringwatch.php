@@ -2,11 +2,11 @@
 /**
  * Plugin Name:       Stringwatch – Untranslated Text Finder for TranslatePress
  * Description:       Adds a Stringwatch tab to the TranslatePress settings: compares every translated page with its original and lists text that was never translated — for any language combination.
- * Version:           0.4.0
+ * Version:           0.4.1
  * Requires at least: 6.5
  * Requires PHP:      8.0
  * Requires Plugins:  translatepress-multilingual
- * Author:            Patrick O'Brien
+ * Author:            Blue River Growth
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       stringwatch
@@ -15,7 +15,7 @@
 
 if (!defined('ABSPATH')) exit;
 
-const TRWATCH_VERSION    = '0.4.0';
+const TRWATCH_VERSION    = '0.4.1';
 const TRWATCH_FILE       = __FILE__;
 const TRWATCH_SLUG       = 'stringwatch';
 const TRWATCH_OPT_RESULT = 'trwatch_last_scan';

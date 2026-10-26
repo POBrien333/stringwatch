@@ -4,7 +4,7 @@ Tags: translatepress, translation, multilingual, quality, untranslated
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 0.4.0
+Stable tag: 0.4.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -73,6 +73,9 @@ No. It only reads. You fix translations in the TranslatePress editor, as usual.
 3. Skipped strings: (9) Undo brings one back.
 
 == Changelog ==
+
+= 0.4.1 =
+* Author: Blue River Growth.
 
 = 0.4.0 =
 * Renamed to Stringwatch – Untranslated Text Finder for TranslatePress (slug and text domain: stringwatch). Settings and scan results are kept.
