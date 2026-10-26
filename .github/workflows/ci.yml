@@ -38,7 +38,7 @@ jobs:
       - name: Build plugin folder as shipped
         run: |
           mkdir -p build
-          git archive HEAD --prefix=translation-watchdog-for-translatepress/ | tar -x -C build
+          git archive HEAD --prefix=stringwatch/ | tar -x -C build
       - uses: wordpress/plugin-check-action@v1
         with:
-          build-dir: build/translation-watchdog-for-translatepress
+          build-dir: build/stringwatch

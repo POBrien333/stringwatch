@@ -1,5 +1,5 @@
 {
-    "name": "patrickobrien/translation-watchdog-for-translatepress",
+    "name": "patrickobrien/stringwatch",
     "description": "Finds text that was never translated on a TranslatePress site.",
     "type": "wordpress-plugin",
     "license": "GPL-2.0-or-later",

@@ -70,7 +70,7 @@
   <rect x="0" y="380" width="1544" height="4" rx="2" fill="url(#laser)" filter="url(#glow)"/>
 
   <!-- wordmark -->
-  <text x="520" y="214" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="78" font-weight="700" fill="#FFFFFF" letter-spacing="-1">Translation Watchdog</text>
-  <text x="524" y="268" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#5BEBC4">for TranslatePress</text>
+  <text x="520" y="214" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="92" font-weight="700" fill="#FFFFFF" letter-spacing="-1">Stringwatch</text>
+  <text x="524" y="268" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="32" font-weight="600" fill="#5BEBC4">Untranslated Text Finder for TranslatePress</text>
   <text x="524" y="326" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="27" fill="#CFEAE4">Finds every string you forgot to translate — page by page.</text>
 </svg>

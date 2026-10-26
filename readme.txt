@@ -1,10 +1,10 @@
-=== Translation Watchdog for TranslatePress ===
+=== Stringwatch – Untranslated Text Finder for TranslatePress ===
 Contributors: bluerivergrowth
 Tags: translatepress, translation, multilingual, quality, untranslated
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 0.3.9
+Stable tag: 0.4.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Finds text that was never translated on your TranslatePress site — for any lan
 
 If you translate your site by hand to keep its quality and tone consistent, it is easy to miss a string — a button label, an image alt text, a line somewhere. And every time you change the design, new strings appear that you might forget to translate. TranslatePress shows you one page at a time, so there is no quick way to see what is still missing across the whole site.
 
-Translation Watchdog adds a **Watchdog** tab to the TranslatePress settings. It compares every public page with each of its translations, as a logged-out visitor sees them, and lists every piece of text that is still identical. TranslatePress' own string tables then tell you why:
+Stringwatch adds a **Stringwatch** tab to the TranslatePress settings. It compares every public page with each of its translations, as a logged-out visitor sees them, and lists every piece of text that is still identical. TranslatePress' own string tables then tell you why:
 
 * **Not translated** — TranslatePress knows the text but has no translation.
 * **Translated, not shown** — a translation exists, but the page still shows the original, usually because of a spelling difference such as curly quotes, dashes or HTML entities.
@@ -37,8 +37,8 @@ Text you deliberately translated to the same words (brand names, "FAQ") is recog
 == Installation ==
 
 1. Install and activate TranslatePress.
-2. Install and activate Translation Watchdog.
-3. Open Settings → TranslatePress → Watchdog. The first scan starts automatically.
+2. Install and activate Stringwatch.
+3. Open Settings → TranslatePress → Stringwatch. The first scan starts automatically.
 
 == Frequently Asked Questions ==
 
@@ -48,7 +48,7 @@ Yes. It does not need to understand any language: it compares each translated pa
 
 = Does it slow down my site? =
 
-No. It does nothing on the front end. A scan only runs while you have the Watchdog tab open, and it fetches your pages the way a visitor would.
+No. It does nothing on the front end. A scan only runs while you have the Stringwatch tab open, and it fetches your pages the way a visitor would.
 
 = Why are brand names or words like "Download" listed? =
 
@@ -73,6 +73,9 @@ No. It only reads. You fix translations in the TranslatePress editor, as usual.
 3. Skipped strings: (9) Undo brings one back.
 
 == Changelog ==
+
+= 0.4.0 =
+* Renamed to Stringwatch – Untranslated Text Finder for TranslatePress (slug and text domain: stringwatch). Settings and scan results are kept.
 
 = 0.3.9 =
 * "Ignore page" moved to the right, next to "Open in translator".

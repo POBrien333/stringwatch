@@ -1,10 +1,10 @@
-<p align="center"><img src="assets/icon.svg" width="160" height="160" alt="Translation Watchdog icon: a split letter A, a scan line finds the seam"></p>
+<p align="center"><img src="assets/icon.svg" width="160" height="160" alt="Stringwatch icon: a split letter A, a scan line finds the seam"></p>
 
-<h1 align="center">Translation Watchdog for TranslatePress</h1>
+<h1 align="center">Stringwatch – Untranslated Text Finder for TranslatePress</h1>
 
 Finds text that was never translated on a [TranslatePress](https://wordpress.org/plugins/translatepress-multilingual/) site — for **any language combination**.
 
-It adds a **Watchdog** tab to the TranslatePress settings. On demand, it fetches every public page twice — the original and each translation, as a logged-out visitor sees them — and lists every piece of text that is still identical. TranslatePress' own string tables then tell it *why*:
+It adds a **Stringwatch** tab to the TranslatePress settings. On demand, it fetches every public page twice — the original and each translation, as a logged-out visitor sees them — and lists every piece of text that is still identical. TranslatePress' own string tables then tell it *why*:
 
 | Badge | Meaning |
 |---|---|
@@ -18,7 +18,7 @@ Text that was deliberately translated to the same words (brand names, "FAQ") is 
 
 ## How it looks
 
-![The Watchdog tab during a scan: results appear page by page](docs/screenshot.png)
+![The Stringwatch tab during a scan: results appear page by page](docs/screenshot.png)
 
 1. **Refresh** — scans the whole site again. Runs automatically when you open the tab.
 2. **Progress** — results appear while the scan runs, with a running count.
@@ -62,7 +62,7 @@ WordPress 6.5+, PHP 8.0+, TranslatePress (free or paid).
 
 ## Installation
 
-Download the zip from the [latest release](../../releases/latest), then *Plugins → Add New → Upload Plugin*. Open *Settings → TranslatePress → Watchdog*.
+Download the zip from the [latest release](../../releases/latest), then *Plugins → Add New → Upload Plugin*. Open *Settings → TranslatePress → Stringwatch*.
 
 The plugin is being submitted to the WordPress.org plugin directory. Once it is listed, install and update it from there (*Plugins → Add New*). This repository holds the source code and the release zips.
 

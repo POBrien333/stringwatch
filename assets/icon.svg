@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" width="256" height="256" role="img">
-  <title>Translation Watchdog for TranslatePress</title>
+  <title>Stringwatch – Untranslated Text Finder for TranslatePress</title>
   <defs>
     <linearGradient id="tile" x1="0" y1="0" x2=".4" y2="1">
       <stop offset="0" stop-color="#0E5866"/>

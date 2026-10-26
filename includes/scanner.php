@@ -84,7 +84,7 @@ function trwatch_fetch(array $urls) {
     if (function_exists('set_time_limit')) set_time_limit(TRWATCH_TIMEOUT * 3);
     /** Filters whether SSL certificates are verified when fetching your own pages. */
     $verify = (bool) apply_filters('trwatch_sslverify', !trwatch_is_local());
-    $ua = 'Translation-Watchdog/' . TRWATCH_VERSION;
+    $ua = 'Stringwatch/' . TRWATCH_VERSION;
     $out = [];
 
     if ($verify && class_exists('\WpOrg\Requests\Requests') && count($urls) > 1) {
@@ -237,7 +237,7 @@ function trwatch_scan_pairs(array $pairs, array $allow) {
         $error = $tgt['error'] ?? null;
         if (!$error && $src['error']) {
             /* translators: %s: error message */
-            $error = sprintf(__('Original page could not be fetched: %s', 'translation-watchdog-for-translatepress'), $src['error']);
+            $error = sprintf(__('Original page could not be fetched: %s', 'stringwatch'), $src['error']);
         }
         $out[$p['target']] = [
             'lang'    => $p['lang'],

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+
+- Renamed to **Stringwatch – Untranslated Text Finder for TranslatePress**, as requested by the WordPress.org plugin review (the name needs a distinctive identifier up front). Slug, text domain, main file and tab are now `stringwatch` / "Stringwatch". The internal prefix `trwatch_` is unchanged, so settings and scan results are kept.
+
 ## 0.3.9
 
 - "Ignore page" moved to the right, next to "Open in translator".

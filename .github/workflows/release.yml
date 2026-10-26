@@ -20,22 +20,22 @@ jobs:
       - name: Tag must match the plugin version
         run: |
           TAG="${GITHUB_REF_NAME#v}"
-          HEADER=$(grep -m1 -oP '^\s*\*\s*Version:\s*\K\S+' translation-watchdog-for-translatepress.php)
-          CONST=$(grep -m1 -oP "TRWATCH_VERSION\s*=\s*'\K[^']+" translation-watchdog-for-translatepress.php)
+          HEADER=$(grep -m1 -oP '^\s*\*\s*Version:\s*\K\S+' stringwatch.php)
+          CONST=$(grep -m1 -oP "TRWATCH_VERSION\s*=\s*'\K[^']+" stringwatch.php)
           echo "tag=$TAG header=$HEADER const=$CONST"
           test "$TAG" = "$HEADER" && test "$TAG" = "$CONST"
 
       - name: Build zip (git archive + .pot)
         run: |
           mkdir -p build
-          git archive HEAD --prefix=translation-watchdog-for-translatepress/ | tar -x -C build
-          mkdir -p build/translation-watchdog-for-translatepress/languages
-          wp i18n make-pot build/translation-watchdog-for-translatepress \
-            build/translation-watchdog-for-translatepress/languages/translation-watchdog-for-translatepress.pot \
-            --domain=translation-watchdog-for-translatepress
-          cd build && zip -rq ../translation-watchdog-for-translatepress.zip translation-watchdog-for-translatepress
+          git archive HEAD --prefix=stringwatch/ | tar -x -C build
+          mkdir -p build/stringwatch/languages
+          wp i18n make-pot build/stringwatch \
+            build/stringwatch/languages/stringwatch.pot \
+            --domain=stringwatch
+          cd build && zip -rq ../stringwatch.zip stringwatch
 
       - uses: softprops/action-gh-release@v2
         with:
-          files: translation-watchdog-for-translatepress.zip
+          files: stringwatch.zip
           generate_release_notes: true

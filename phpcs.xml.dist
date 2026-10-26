@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Translation Watchdog">
+<ruleset name="Stringwatch">
     <description>Security, database and i18n rules from the WordPress Coding Standards. Formatting rules are left out on purpose.</description>
     <file>.</file>
     <exclude-pattern>/vendor/*</exclude-pattern>
@@ -11,7 +11,7 @@
     <rule ref="WordPress.DB"/>
     <rule ref="WordPress.WP.I18n">
         <properties>
-            <property name="text_domain" type="array"><element value="translation-watchdog-for-translatepress"/></property>
+            <property name="text_domain" type="array"><element value="stringwatch"/></property>
         </properties>
     </rule>
     <rule ref="WordPress.PHP.DontExtract"/>
