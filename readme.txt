@@ -75,7 +75,7 @@ No. It only reads. You fix translations in the TranslatePress editor, as usual.
 == Changelog ==
 
 = 0.4.1 =
-* Author: Blue River Growth.
+* Author: Blue River Growth (bluerivergrowth.com).
 
 = 0.4.0 =
 * Renamed to Stringwatch – Untranslated Text Finder for TranslatePress (slug and text domain: stringwatch). Settings and scan results are kept.

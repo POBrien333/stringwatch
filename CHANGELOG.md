@@ -2,7 +2,7 @@
 
 ## 0.4.1
 
-- Author shown as "Blue River Growth".
+- Author shown as "Blue River Growth", linked to https://bluerivergrowth.com/.
 
 ## 0.4.0
 
