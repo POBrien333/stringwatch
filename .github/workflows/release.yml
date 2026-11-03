@@ -39,3 +39,13 @@ jobs:
         with:
           files: stringwatch.zip
           generate_release_notes: true
+
+      # Same version on WordPress.org (plugin directory guideline 3). Files follow .gitattributes export-ignore;
+      # banner, icons and screenshots come from .wordpress-org/. Action pinned to an exact commit (it receives the SVN password).
+      - name: Deploy to WordPress.org
+        uses: 10up/action-wordpress-plugin-deploy@54bd289b8525fd23a5c365ec369185f2966529c2
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: stringwatch
+          ASSETS_DIR: .wordpress-org

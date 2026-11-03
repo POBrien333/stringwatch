@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.2
+
+- First release on WordPress.org; tagged releases now deploy there automatically.
+
 ## 0.4.1
 
 - Author shown as "Blue River Growth", linked to https://bluerivergrowth.com/.

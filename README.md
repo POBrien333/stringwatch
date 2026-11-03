@@ -62,9 +62,9 @@ WordPress 6.5+, PHP 8.0+, TranslatePress (free or paid).
 
 ## Installation
 
-Download the zip from the [latest release](../../releases/latest), then *Plugins → Add New → Upload Plugin*. Open *Settings → TranslatePress → Stringwatch*.
+Open *Settings → TranslatePress → Stringwatch*.
 
-The plugin is being submitted to the WordPress.org plugin directory. Once it is listed, install and update it from there (*Plugins → Add New*). This repository holds the source code and the release zips.
+Install and update it from the [WordPress.org plugin directory](https://wordpress.org/plugins/stringwatch/) (*Plugins → Add New*, search for "Stringwatch"). This repository holds the source code and the release zips.
 
 ## Filters
 
